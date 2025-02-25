@@ -22,6 +22,7 @@ main {
     background-size: cover;
     padding-left: 1rem;
     padding-right: 1rem;
+
 }
 .header nav ul li a {
     color: inherit;
@@ -34,10 +35,10 @@ main {
     color: rgb(255, 255, 255);
 }
 .header {
-    position: sticky;
+    /* position: sticky;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,18 +145,34 @@ h3 {
 .langages {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    width: 100%;
     margin: auto;
+
 }
 figure {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
     height: 200px;  
     border: 1px solid black;
+    margin: 2% auto;
+
     
     
 }
-.fiure img {
+figure img {
     width: 50%;
+    background-color: red;
+    margin-bottom: 0 auto 0.5rem;
+
+}
+figure h6, p {
+    text-align: center;
+}
+img:last-child {
+    justify-self: flex-end;
 }
 
 
@@ -168,6 +185,8 @@ figure {
     z-index: 2;
 }
 .footer {
+
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,6 +211,12 @@ figure {
     margin-left: 2rem;
 }
 @media screen and (max-width:600px) {
+    .header {
+        flex-direction: column;
+    }
+    aside {
+        display: none;
+    }
     nav ul {
         flex-direction: column ;
     }
