@@ -42,10 +42,7 @@ main {
     justify-content: center;
     align-items: center;
     background-image: url("../assets/background-image.jpg");
-    background-size: cover;
-
- 
-    
+    background-size: cover;   
 }
 .div-photo {
     width: 15%;
@@ -148,14 +145,20 @@ h3 {
     margin: auto;
 }
 figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;  
     border: 1px solid black;
-    
-    
 }
-.fiure img {
+figure h6, p {
+    text-align: center;
+}
+figure img {
     width: 50%;
+    background-color: tomato;
 }
 
 
@@ -192,20 +195,19 @@ figure {
     margin-left: 2rem;
 }
 @media screen and (max-width:600px) {
+    .header, #presentation,  .experiences__box {
+        flex-direction: column;
+    }
     nav ul {
         flex-direction: column ;
-    }
-    #presentation{
-        flex-direction: column;
     }
     .presentation__text{
         text-align: center;
     }
-    .presentation__contact {
+    .presentation__contact, aside {
         text-align: center;
     }
     .experiences__box {
-        flex-direction: column;
         gap: 1rem;
         justify-content: center;
         align-items: center;
@@ -221,8 +223,6 @@ figure {
     .diplomes__today {
         flex-direction: column;
         padding-bottom: 1rem;
-    }
-    .diplomes__today{
         text-align: center;
     }
     h2 {
@@ -230,7 +230,7 @@ figure {
     }
    
 } 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
         .experiences__box {
             justify-content: space-around;
         }
