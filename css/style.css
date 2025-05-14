@@ -54,7 +54,7 @@ nav ul  {
 /* FIN : heeader */
 main {
     background: linear-gradient(160deg, rgb(109, 134, 161), rgb(63, 40, 104));
-    padding: 0 1rem;
+
 }
 .text-center {
     text-align: center;
@@ -63,16 +63,17 @@ main {
 #presentation {
     margin: 0 1rem 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     padding: 3rem 0;
+    text-align: center;
 }
 .presentation__contact a {
     color: #000;
 
 }
 
-#presentation h1 {
+/* #presentation h1 {
     margin: 0.2rem;
     text-align: center;
 }
@@ -84,23 +85,15 @@ main {
     align-items: center;
     margin-bottom: 2rem;
 
-}
-#presentation  {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    
-}
+} */
+
 /* FIN : presentation */
 
 /* START : Experiences */
 #experiences  {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2rem;
 }
 #experiences h2 {
@@ -109,7 +102,7 @@ main {
 }
 .experiences__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
 }
@@ -118,13 +111,13 @@ main {
 #diplomes {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2rem;
 
 }
 .diplomes__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
 }
