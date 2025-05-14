@@ -7,6 +7,8 @@
     list-style: none;
     font-family: "Cabin", serif;
     line-height: 1.5;
+    list-style: none;
+
 
 }
 .flux {
@@ -17,56 +19,46 @@
 
 
 /*Stylisation : header*/   
-main {
-       background: url("../assets/my-bb-img.webp");
-    background-size: cover;
-    padding-left: 1rem;
-    padding-right: 1rem;
 
-}
-.header nav ul li a {
-    color: inherit;
+.header a {
     padding-right: 1.5rem;
-    color: rgb(255, 255, 255);
-    font-size: 1.7rem;
+    color: #000;
+    font-size: 1.2rem;
 }
 
-.header nav ul li a:hover{
-    color: rgb(255, 255, 255);
+.header a:hover{
+    color: rgb(36, 31, 31);
+    transform: scale(1.5);
 }
 .header {
-    /* position: sticky;
-    top: 0;
-    left: 0;
-    right: 0; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-image: url("../assets/background-image.jpg");
-    background-size: cover;
-
- 
-    
+    border: 1px solid;
+    border-radius: 5px;
+    background:linear-gradient(160deg, rgb(89, 118, 199),rgb(114, 132, 151));   
 }
 .div-photo {
-    width: 15%;
+    width: 19%;
 }
 .photo {
     width: 100%; 
-    clip-path: circle(40%);
+    clip-path: circle(50%);
+    margin-left: 1rem;
 }
-
 nav ul  {
     width: 100%;
     display: flex;
     padding: 1.5rem;
 }
-aside {
-    color: white;
-    font-style: italic;
-}
 /* FIN : heeader */
-
+main {
+    background: linear-gradient(160deg, rgb(109, 134, 161), rgb(63, 40, 104));
+    padding: 0 1rem;
+}
+.text-center {
+    text-align: center;
+}
 /* SECTION : présentation */
 #presentation {
     margin: 0 1rem 0;
@@ -75,17 +67,23 @@ aside {
     align-items: center;
     padding: 3rem 0;
 }
+.presentation__contact a {
+    color: #000;
+
+}
 
 #presentation h1 {
     margin: 0.2rem;
     text-align: center;
 }
-#presentation .presentation__text p {
+#presentation .presentation__text  {
     text-align: center;
     font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
+
 }
 #presentation  {
     display: flex; 
@@ -139,15 +137,11 @@ aside {
     height: auto;
     width: 100%;
 }
-h3 {
-    text-align: center;
-}
 .langages {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-
 }
 figure {
     display: flex;
@@ -156,17 +150,12 @@ figure {
     align-items: center;
     width: 25%;
     height: 200px;  
-    border: 1px solid black;
-    margin: 2% auto;
-
-    
-    
+    margin: 2% auto; 
 }
 figure img {
-    width: 50%;
-    background-color: red;
+    width: 40%;
+    background-color: rgba(196, 77, 77, 0.623);
     margin-bottom: 0 auto 0.5rem;
-
 }
 figure h6, p {
     text-align: center;
@@ -174,8 +163,6 @@ figure h6, p {
 img:last-child {
     justify-self: flex-end;
 }
-
-
 .reseau .copyright, .mentions {
     display: flex;
     flex-direction: column;
@@ -185,13 +172,13 @@ img:last-child {
     z-index: 2;
 }
 .footer {
-
+    border-radius: 5px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 10%;
-    background-color: #a4cbcf;
+    background: linear-gradient(160deg, rgb(65, 32, 73), rgb(54, 122, 201)) ;
     text-align: center;
     padding-top: 1rem;
     color: white;
@@ -213,9 +200,6 @@ img:last-child {
 @media screen and (max-width:600px) {
     .header {
         flex-direction: column;
-    }
-    aside {
-        display: none;
     }
     nav ul {
         flex-direction: column ;
@@ -246,14 +230,12 @@ img:last-child {
     .diplomes__today {
         flex-direction: column;
         padding-bottom: 1rem;
-    }
-    .diplomes__today{
         text-align: center;
     }
+    
     h2 {
         text-align: center;
     }
-   
 } 
 @media screen and (min-width: 800px) {
         .experiences__box {
